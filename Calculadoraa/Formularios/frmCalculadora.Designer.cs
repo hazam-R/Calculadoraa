@@ -33,6 +33,7 @@
             txtVariableA = new TextBox();
             txtVariableB = new TextBox();
             btnCalcular = new Button();
+            btnReset = new Button();
             SuspendLayout();
             // 
             // label1
@@ -53,35 +54,46 @@
             label2.TabIndex = 1;
             label2.Text = "Variable B";
             // 
-            // textBox1
+            // txtVariableA
             // 
             txtVariableA.Location = new Point(39, 112);
-            txtVariableA.Name = "textBox1";
+            txtVariableA.Name = "txtVariableA";
             txtVariableA.Size = new Size(125, 27);
             txtVariableA.TabIndex = 2;
             // 
-            // textBox2
+            // txtVariableB
             // 
             txtVariableB.Location = new Point(39, 323);
-            txtVariableB.Name = "textBox2";
+            txtVariableB.Name = "txtVariableB";
             txtVariableB.Size = new Size(125, 27);
             txtVariableB.TabIndex = 3;
             // 
-            // button1
+            // btnCalcular
             // 
             btnCalcular.Location = new Point(558, 104);
-            btnCalcular.Name = "button1";
+            btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(94, 29);
             btnCalcular.TabIndex = 4;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
             btnCalcular.Click += button1_Click;
             // 
+            // btnReset
+            // 
+            btnReset.Location = new Point(530, 258);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(94, 29);
+            btnReset.TabIndex = 5;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click_1;
+            // 
             // frmCalculadora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnReset);
             Controls.Add(btnCalcular);
             Controls.Add(txtVariableB);
             Controls.Add(txtVariableA);
@@ -100,5 +112,6 @@
         private TextBox txtVariableA;
         private TextBox txtVariableB;
         private Button btnCalcular;
+        private Button btnReset;
     }
 }

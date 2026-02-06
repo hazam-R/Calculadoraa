@@ -26,12 +26,29 @@ namespace Calculadoraa.Formularios
                 resultado = a + b;
                 MessageBox.Show("El resultado es: " + resultado.ToString(), "Sistema"
                     , MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Reset();
             }
             catch (Exception)
             {
                 MessageBox.Show("Error en la conversión de datos",
+
                     "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+        
+
+        private void Reset()
+        {
+            txtVariableA.Text = "";
+            txtVariableB.Clear();
+            txtVariableA.Focus();
+        }
+
+        private void btnReset_Click_1(object sender, EventArgs e)
+        {
+            Reset();
         }
     }
+
 }
