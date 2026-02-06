@@ -1,6 +1,6 @@
 ﻿namespace Calculadoraa
 {
-    partial class Form1
+    partial class frmMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // Menu
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Name = "Menu";
             Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
