@@ -34,9 +34,32 @@ namespace Calculadoraa.Formularios
             //Para poner los datos registrados en la dgv en mostrar, el metodo es selectedIndexChanged y se puso en mostrar
             if (tabControl1.SelectedIndex == 1)
             {
+
                 dgvPersonas.DataSource = null;
                 dgvPersonas.DataSource = persona;
+                verificarRegistros();
             }
+        }
+
+        private void verificarRegistros()
+        {
+            if (persona.Count == 0)
+            {
+                btnEliminar.Enabled = false;
+            }
+            else
+            {
+                btnEliminar.Enabled = true;
+            }
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            persona.RemoveAt(dgvPersonas.CurrentRow.Index);
+            dgvPersonas.DataSource = null; //Limpiar el DataGrid
+            dgvPersonas.DataSource = persona; //Volver a llenar el DGV
+            verificarRegistros();//Verificar si habilito el boton 
         }
     }
 }

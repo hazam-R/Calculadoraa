@@ -31,5 +31,11 @@ namespace Calculadoraa
             frmRegistro registro = new frmRegistro();
             registro.Show();
         }
+
+        private void relojToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTemporizadores reloj = new frmTemporizadores(); 
+            reloj.Show();
+        }
     }
 }
