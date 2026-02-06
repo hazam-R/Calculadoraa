@@ -34,10 +34,10 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
-            button1 = new Button();
+            this.txtNombre = new TextBox();
+            this.txtApellido = new TextBox();
+            this.dtpFecha = new DateTimePicker();
+            btnRegistrar = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             SuspendLayout();
@@ -64,10 +64,10 @@
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(button1);
-            tabPage2.Controls.Add(dateTimePicker1);
-            tabPage2.Controls.Add(textBox2);
-            tabPage2.Controls.Add(textBox1);
+            tabPage2.Controls.Add(btnRegistrar);
+            tabPage2.Controls.Add(this.dtpFecha);
+            tabPage2.Controls.Add(this.txtApellido);
+            tabPage2.Controls.Add(this.txtNombre);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(label2);
             tabPage2.Controls.Add(label1);
@@ -106,35 +106,35 @@
             label3.TabIndex = 2;
             label3.Text = "Fecha de Nacimiento";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Location = new Point(46, 74);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(208, 27);
-            textBox1.TabIndex = 3;
+            this.txtNombre.Location = new Point(46, 74);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new Size(208, 27);
+            this.txtNombre.TabIndex = 3;
             // 
-            // textBox2
+            // txtApellido
             // 
-            textBox2.Location = new Point(46, 178);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(208, 27);
-            textBox2.TabIndex = 4;
+            this.txtApellido.Location = new Point(46, 178);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new Size(208, 27);
+            this.txtApellido.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            dateTimePicker1.Location = new Point(46, 305);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(282, 27);
-            dateTimePicker1.TabIndex = 5;
+            this.dtpFecha.Location = new Point(46, 305);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new Size(282, 27);
+            this.dtpFecha.TabIndex = 5;
             // 
-            // button1
+            // btnRegistrar
             // 
-            button1.Location = new Point(483, 323);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 6;
-            button1.Text = "Registrar";
-            button1.UseVisualStyleBackColor = true;
+            btnRegistrar.Location = new Point(483, 323);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(94, 29);
+            btnRegistrar.TabIndex = 6;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
             // 
             // frmRegistro
             // 
@@ -155,12 +155,12 @@
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private DateTimePicker dtpFecha;
+        private TextBox txtApellido;
+        private TextBox txtNombre;
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button button1;
+        private Button btnRegistrar;
     }
 }
