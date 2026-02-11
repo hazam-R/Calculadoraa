@@ -34,8 +34,14 @@ namespace Calculadoraa
 
         private void relojToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmTemporizadores reloj = new frmTemporizadores(); 
+            frmTemporizadores reloj = new frmTemporizadores();
             reloj.Show();
+        }
+
+        private void editorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditor editor = new frmEditor();
+            editor.Show();
         }
     }
 }
