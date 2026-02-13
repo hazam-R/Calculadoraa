@@ -39,6 +39,7 @@
             temporizadoresToolStripMenuItem = new ToolStripMenuItem();
             relojToolStripMenuItem = new ToolStripMenuItem();
             editorToolStripMenuItem = new ToolStripMenuItem();
+            contadToolStripMenuItem = new ToolStripMenuItem();
             mnsPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,10 +69,10 @@
             // 
             // aplicacionesToolStripMenuItem
             // 
-            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientosToolStripMenuItem, registrosToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem });
+            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientosToolStripMenuItem, registrosToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem, contadToolStripMenuItem });
             aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
-            aplicacionesToolStripMenuItem.Size = new Size(107, 24);
-            aplicacionesToolStripMenuItem.Text = "Aplicaciones";
+            aplicacionesToolStripMenuItem.Size = new Size(37, 24);
+            aplicacionesToolStripMenuItem.Text = "or";
             // 
             // calculadoraSimpleToolStripMenuItem
             // 
@@ -122,6 +123,13 @@
             editorToolStripMenuItem.Text = "Editor";
             editorToolStripMenuItem.Click += editorToolStripMenuItem_Click;
             // 
+            // contadToolStripMenuItem
+            // 
+            contadToolStripMenuItem.Name = "contadToolStripMenuItem";
+            contadToolStripMenuItem.Size = new Size(224, 26);
+            contadToolStripMenuItem.Text = "Contador";
+            contadToolStripMenuItem.Click += contadToolStripMenuItem_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -150,5 +158,6 @@
         private ToolStripMenuItem temporizadoresToolStripMenuItem;
         private ToolStripMenuItem relojToolStripMenuItem;
         private ToolStripMenuItem editorToolStripMenuItem;
+        private ToolStripMenuItem contadToolStripMenuItem;
     }
 }
