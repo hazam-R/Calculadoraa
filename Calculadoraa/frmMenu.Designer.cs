@@ -40,6 +40,7 @@
             relojToolStripMenuItem = new ToolStripMenuItem();
             editorToolStripMenuItem = new ToolStripMenuItem();
             contadToolStripMenuItem = new ToolStripMenuItem();
+            dIrectorioXMLToolStripMenuItem = new ToolStripMenuItem();
             mnsPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -69,10 +70,10 @@
             // 
             // aplicacionesToolStripMenuItem
             // 
-            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientosToolStripMenuItem, registrosToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem, contadToolStripMenuItem });
+            aplicacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientosToolStripMenuItem, registrosToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem, contadToolStripMenuItem, dIrectorioXMLToolStripMenuItem });
             aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
-            aplicacionesToolStripMenuItem.Size = new Size(37, 24);
-            aplicacionesToolStripMenuItem.Text = "or";
+            aplicacionesToolStripMenuItem.Size = new Size(107, 24);
+            aplicacionesToolStripMenuItem.Text = "Aplicaciones";
             // 
             // calculadoraSimpleToolStripMenuItem
             // 
@@ -130,6 +131,13 @@
             contadToolStripMenuItem.Text = "Contador";
             contadToolStripMenuItem.Click += contadToolStripMenuItem_Click;
             // 
+            // dIrectorioXMLToolStripMenuItem
+            // 
+            dIrectorioXMLToolStripMenuItem.Name = "dIrectorioXMLToolStripMenuItem";
+            dIrectorioXMLToolStripMenuItem.Size = new Size(224, 26);
+            dIrectorioXMLToolStripMenuItem.Text = "DIrectorio XML";
+            dIrectorioXMLToolStripMenuItem.Click += dIrectorioXMLToolStripMenuItem_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -159,5 +167,6 @@
         private ToolStripMenuItem relojToolStripMenuItem;
         private ToolStripMenuItem editorToolStripMenuItem;
         private ToolStripMenuItem contadToolStripMenuItem;
+        private ToolStripMenuItem dIrectorioXMLToolStripMenuItem;
     }
 }
